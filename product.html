@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crispie - Product Details</title>
+  <link rel="stylesheet" href="css/product.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <header class="slide-down">
+    <div class="logo">
+      <h1>Crispie</h1>
+      <p>Healthy Snacks & Drinks</p>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="cart.html">Cart</a></li>
+        <li><a href="#" id="logout-btn">Logout</a></li>
+      </ul>
+    </nav>
+    <div class="cart-icon">
+      <a href="cart.html"><i class="fas fa-shopping-basket"></i> <span id="cart-count">0</span></a>
+    </div>
+  </header>
+
+  <main>
+    <section class="product-details">
+      <div class="product-gallery fade-in">
+        <div class="main-image">
+          <img id="main-product-image" src="" alt="Product Image">
+        </div>
+        <div class="thumbnail-container">
+          <div class="thumbnail active"><img src="ng/images/general.jpg" alt="Thumbnail 1"></div>
+          <div class="thumbnail"><img src="ng/images/general.jpg" alt="Thumbnail 2"></div>
+          <div class="thumbnail"><img src="ng/images/general.jpg" alt="Thumbnail 3"></div>
+        </div>
+      </div>
+      <div class="product-info slide-up">
+        <h1 id="product-title">Product Name</h1>
+        <div class="price-rating">
+          <span id="product-price" class="price">$9.99</span>
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <span>(24 reviews)</span>
+          </div>
+        </div>
+        
+        <p id="product-description" class="description">Product description goes here with all the details about ingredients, benefits, etc.</p>
+        
+        <div class="nutrition-facts slide-up">
+          <h3>Nutrition Facts</h3>
+          <ul id="nutrition-list">
+            <li><span>Calories</span><span>150</span></li>
+            <li><span>Protein</span><span>5g</span></li>
+            <li><span>Carbs</span><span>20g</span></li>
+            <li><span>Fat</span><span>3g</span></li>
+          </ul>
+        </div>
+        
+        <div class="quantity-selector slide-up">
+          <label for="quantity">Quantity:</label>
+          <div class="quantity-control">
+            <button class="quantity-btn minus"><i class="fas fa-minus"></i></button>
+            <input type="number" id="quantity" value="1" min="1">
+            <button class="quantity-btn plus"><i class="fas fa-plus"></i></button>
+          </div>
+        </div>
+        
+        <button id="add-to-cart-btn" class="add-to-cart pulse">Add to Cart</button>
+      </div>
+    </section>
+    
+    <section class="related-products slide-up">
+      <h2>You Might Also Like</h2>
+      <div class="related-container">
+        <!-- Related products will be loaded here -->
+      </div>
+    </section>
+  </main>
+
+  <footer class="slide-up">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Crispie</h3>
+        <p>Healthy snacks and drinks to energize your day</p>
+      </div>
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="cart.html">Cart</a></li>
+          <li><a href="#">About Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Contact</h3>
+        <p>hello@crispie.com</p>
+        <p>+1 (123) 456-7890</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Crispie. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script type="module" src="js/products.js"></script>
+  <script type="module" src="js/cart.js"></script>
+  <script src="js/animations.js"></script>
+</body>
+</html>

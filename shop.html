@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crispie - Shop Healthy Snacks</title>
+  <link rel="stylesheet" href="css/shop.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="slide-down">
+        <div class="logo">
+          <h1>Crispie</h1>
+          <p>Healthy Snacks & Drinks</p>
+          <span class="username-display" style="display:none;">Hello, <span id="username"></span>!</span>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="cart.html">Cart</a></li>
+            <li><a href="#" id="logout-btn">Logout</a></li>
+          </ul>
+        </nav>
+        <div class="cart-icon">
+          <a href="cart.html"><i class="fas fa-shopping-basket"></i> <span id="cart-count">0</span></a>
+        </div>
+      </header>
+
+  <main>
+    <section class="hero fade-in">
+      <div class="hero-content">
+        <h2>Fuel Your Day The Healthy Way</h2>
+        <p>Discover our delicious range of snacks and drinks made with fresh, natural ingredients</p>
+      </div>
+    </section>
+
+    <section class="category-section slide-up">
+      <h2 class="section-title">Featured Products</h2>
+      <div class="product-carousel">
+        <button class="carousel-btn prev"><i class="fas fa-chevron-left"></i></button>
+        <div class="product-container" id="featured-products">
+          <!-- Featured products will be loaded here -->
+        </div>
+        <button class="carousel-btn next"><i class="fas fa-chevron-right"></i></button>
+      </div>
+    </section>
+
+    <section class="category-section slide-up">
+      <h2 class="section-title">Fresh Salads</h2>
+      <div class="product-carousel">
+        <button class="carousel-btn prev"><i class="fas fa-chevron-left"></i></button>
+        <div class="product-container" id="salad-products">
+          <!-- Salad products will be loaded here -->
+        </div>
+        <button class="carousel-btn next"><i class="fas fa-chevron-right"></i></button>
+      </div>
+    </section>
+
+    <section class="category-section slide-up">
+      <h2 class="section-title">Refreshing Smoothies</h2>
+      <div class="product-carousel">
+        <button class="carousel-btn prev"><i class="fas fa-chevron-left"></i></button>
+        <div class="product-container" id="smoothie-products">
+          <!-- Smoothie products will be loaded here -->
+        </div>
+        <button class="carousel-btn next"><i class="fas fa-chevron-right"></i></button>
+      </div>
+    </section>
+
+    <section class="category-section slide-up">
+      <h2 class="section-title">Creamy Yogurts & Parfaits</h2>
+      <div class="product-carousel">
+        <button class="carousel-btn prev"><i class="fas fa-chevron-left"></i></button>
+        <div class="product-container" id="yogurt-products">
+          <!-- Yogurt products will be loaded here -->
+        </div>
+        <button class="carousel-btn next"><i class="fas fa-chevron-right"></i></button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="slide-up">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Crispie</h3>
+        <p>Healthy snacks and drinks to energize your day</p>
+      </div>
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="cart.html">Cart</a></li>
+          <li><a href="#">About Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Contact</h3>
+        <p>hello@crispie.com</p>
+        <p>+1 (123) 456-7890</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2023 Crispie. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script type="module" src="js/products.js"></script>
+  <script type="module" src="js/cart.js"></script>
+  <script src="js/animations.js"></script>
+</body>
+</html>

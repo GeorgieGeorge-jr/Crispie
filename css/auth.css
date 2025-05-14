@@ -1,0 +1,250 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  min-height: 500px;
+  background: #fff;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+  overflow: hidden;
+  border-radius: 15px;
+  display: flex;
+  margin: 20px;
+}
+
+.form-container {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 50%;
+  padding: 40px;
+  transition: all 0.6s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.form-container h2 {
+  color: #2c3e50;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form-container input {
+  padding: 12px 15px;
+  width: 100%;
+  max-width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 25px;
+  font-size: 14px;
+  transition: all 0.3s;
+}
+
+.form-container input:focus {
+  border-color: #4ca1af;
+  outline: none;
+  box-shadow: 0 0 5px rgba(76, 161, 175, 0.5);
+}
+
+.form-container button {
+  padding: 12px 25px;
+  background: linear-gradient(45deg, #4ca1af, #2c3e50);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s;
+  width: 100%;
+  max-width: 300px;
+}
+
+.form-container button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.form-container .message {
+  margin-top: 10px;
+  font-size: 14px;
+  text-align: center;
+  width: 100%;
+  max-width: 300px;
+}
+
+.form-container .error {
+  color: #e74c3c;
+}
+
+.form-container .success {
+  color: #2ecc71;
+}
+
+.signin-container {
+  left: 0;
+  z-index: 2;
+}
+
+.signup-container {
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+
+.container.active .signup-container {
+  transform: translateX(100%);
+  opacity: 1;
+  z-index: 5;
+}
+
+.container.active .signin-container {
+  transform: translateX(100%);
+  opacity: 0;
+  z-index: 1;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(135deg, #4CAF50, #8BC34A);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  transition: transform 0.6s ease-in-out;
+  text-align: center;
+  padding: 0 30px;
+}
+
+.overlay h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.overlay p {
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+
+.overlay button {
+  background: transparent;
+  border: 2px solid white;
+  padding: 10px 25px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 25px;
+  transition: all 0.3s;
+}
+
+.overlay button:hover {
+  background: rgba(255,255,255,0.2);
+}
+
+.container.active .overlay {
+  transform: translateX(-100%);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  body {
+    padding: 20px;
+    display: block;
+    height: auto;
+  }
+
+  .container {
+    flex-direction: column;
+    height: auto;
+    min-height: auto;
+    border-radius: 15px;
+    margin: 0;
+  }
+
+  .form-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 40px 30px;
+    transform: none !important;
+    opacity: 1 !important;
+    display: none;
+  }
+
+  .form-container.active {
+    display: flex;
+  }
+
+  .signin-container.active {
+    display: flex;
+  }
+
+  .signup-container.active {
+    display: flex;
+  }
+
+  .overlay {
+    position: relative;
+    width: 100%;
+    height: auto;
+    left: 0;
+    padding: 30px;
+    transform: none !important;
+  }
+
+  .container.active .overlay {
+    display: none;
+  }
+
+  .form-container input,
+  .form-container button {
+    max-width: 100%;
+  }
+}
+
+/* Small mobile devices */
+@media (max-width: 480px) {
+  .form-container {
+    padding: 30px 20px;
+  }
+
+  .overlay {
+    padding: 25px 20px;
+  }
+
+  .overlay h2 {
+    font-size: 24px;
+  }
+
+  .overlay p {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+}
