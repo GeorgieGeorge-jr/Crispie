@@ -29,8 +29,24 @@ const products = [
       fat: '2g'
     }
   },
+
   {
     id: '2',
+    name: 'Strawberry Smoothie',
+    category: 'smoothie',
+    price: 5000,
+    description: 'Creamy strawberry smoothie with almond milk and honey',
+    image: 'ng/images/strawberry.jpg',
+    nutrition: {
+      calories: 220,
+      protein: '5g',
+      carbs: '35g',
+      fat: '2g'
+    }
+  },
+  
+  {
+    id: '3',
     name: 'Berry Blast Smoothie',
     category: 'smoothie',
     price: 4500,
@@ -44,10 +60,10 @@ const products = [
     }
   },
   {
-    id: '3',
+    id: '4',
     name: 'Green Detox Smoothie',
     category: 'smoothie',
-    price: 7.49,
+    price: 4500,
     description: 'Kale, spinach, apple, lemon and ginger for a healthy boost',
     image: 'ng/images/greendetox.jpg',
     nutrition: {
@@ -57,8 +73,26 @@ const products = [
       fat: '1g'
     }
   },
+
+
   {
-    id: '4',
+    id: '5',
+    name: 'Peanut Butter Smoothie',
+    category: 'smoothie',
+    price: 5000,
+    description: 'Creamy peanut butter with banana and almond milk',
+    image: 'ng/images/pbutter.jpg',
+    nutrition: {
+      calories: 220,
+      protein: '3g',
+      carbs: '45g',
+      fat: '2g'
+    }
+  },
+
+
+  {
+    id: '6',
     name: 'Greek Yogurt Parfait',
     category: 'yogurt',
     price: 4000,
@@ -71,8 +105,106 @@ const products = [
       fat: '8g'
     }
   },
+
   {
-    id: '5',
+    id: '7',
+    name: 'Fruit and Nut Yogurt Bowl',
+    category: 'yogurt',
+    price: 4500,
+    description: 'Greek yogurt topped with seasonal fruits and nuts',
+    image: 'ng/images/yogurtbowl.jpg',
+    nutrition: {
+      calories: 300,
+      protein: '10g',
+      carbs: '40g',
+      fat: '10g'
+    }
+  },
+
+  {
+    id: '8',
+    name: 'Vanilla Chia Yogurt',
+    category: 'yogurt',
+    price: 3500,
+    description: 'Vanilla yogurt with chia seeds and fresh berries',
+    image: 'ng/images/vanillachia.webp',
+    nutrition: {
+      calories: 200,
+      protein: '6g',
+      carbs: '30g',
+      fat: '5g'
+    }
+  },
+
+  {
+    id: '9',
+    name: 'Honey Almond Yogurt',
+    category: 'yogurt',
+    price: 4000,
+    description: 'Creamy yogurt with honey, almonds and chia seeds',
+    image: 'ng/images/honeyalmond.jpg',
+    nutrition: {
+      calories: 250,
+      protein: '8g',
+      carbs: '30g',
+      fat: '9g'
+    }
+  },
+
+  {
+    id: '10',
+    name: 'Mango Coconut Yogurt Bowl',
+    category: 'yogurt',
+    price: 5000,
+    description: 'Mango yogurt with coconut flakes and chia seeds',
+    image: 'ng/images/mangococonut.webp',
+    nutrition: {
+      calories: 320,
+      protein: '6g',
+      carbs: '45g',
+      fat: '12g'
+    }
+  },
+
+  {
+    id: '11',
+    name: 'Berry Bliss Yogurt Parfait',
+    category: 'yogurt',
+    price: 4500,
+    description: 'Layers of yogurt, mixed berries and granola',
+    image: 'ng/images/berrybliss.jpg',
+    nutrition: {
+      calories: 280,
+      protein: '10g',
+      carbs: '35g',
+      fat: '7g'
+    }
+  },
+
+  {
+    id: '12',
+    name: 'Caesar Salad',
+    category: 'salad',
+    price: 6000,
+    description:
+      "Crisp romaine lettuce, grilled chicken, croutons, parmesan cheese and Caesar dressing",
+    image:
+      "ng/images/caesarsalad.jpg",
+    nutrition:
+      {
+        calories:
+          450,
+        protein:
+          "30g",
+        carbs:
+          "20g",
+        fat:
+          "25g"
+      }
+  },
+
+  {
+    id: '13',
     name: 'Quinoa Salad Bowl',
     category: 'salad',
     price: 5000,
@@ -86,12 +218,12 @@ const products = [
     }
   },
   {
-    id: '6',
+    id: '14',
     name: 'Avocado Toast',
     category: 'general',
     price: 7.49,
     description: 'Sourdough bread with smashed avocado, cherry tomatoes and feta',
-    image: 'images/general1.jpg',
+    image: 'ng/images/cadotoast.jpg',
     nutrition: {
       calories: 350,
       protein: '8g',
@@ -100,26 +232,26 @@ const products = [
     }
   },
   {
-    id: '7',
-    name: 'Acai Bowl',
+    id: '15',
+    name: 'Wedge Salad',
     category: 'general',
-    price: 8.99,
-    description: 'Acai blend topped with granola, banana and honey',
-    image: 'images/general2.jpg',
+    price: 8000,
+    description: 'Crisp iceberg lettuce with blue cheese dressing, bacon bits and tomatoes',
+    image: 'ng/images/wedgesalad.jpg',
     nutrition: {
-      calories: 380,
-      protein: '6g',
-      carbs: '60g',
-      fat: '14g'
+      calories: 280,
+      protein: '10g',
+      carbs: '40g',
+      fat: '4g'
     }
   },
   {
-    id: '8',
+    id: '16',
     name: 'Chia Pudding',
     category: 'general',
-    price: 5.99,
+    price: 3000,
     description: 'Chia seeds soaked in almond milk with fresh berries',
-    image: 'images/general3.jpg',
+    image: 'ng/images/chiapudding.webp',
     nutrition: {
       calories: 250,
       protein: '7g',
@@ -150,12 +282,15 @@ function loadProducts() {
   const smoothieContainer = document.getElementById('smoothie-products');
   const yogurtContainer = document.getElementById('yogurt-products');
   
-  // Featured products (first 4)
-  products.slice(0, 4).forEach(product => {
+  // Get 5 random featured products from all categories
+  const shuffledProducts = [...products].sort(() => 0.5 - Math.random());
+  const featuredProducts = shuffledProducts.slice(0, 5);
+  
+  featuredProducts.forEach(product => {
     featuredContainer.appendChild(createProductCard(product));
   });
   
-  // Filter by category
+  // Filter remaining products by category
   const salads = products.filter(p => p.category === 'salad');
   const smoothies = products.filter(p => p.category === 'smoothie');
   const yogurts = products.filter(p => p.category === 'yogurt');
@@ -172,7 +307,6 @@ function loadProducts() {
     yogurtContainer.appendChild(createProductCard(product));
   });
   
-  // Initialize carousels
   initCarousels();
 }
 
@@ -196,7 +330,8 @@ function loadProductDetails() {
   
   // Populate product details
   document.getElementById('product-title').textContent = product.name;
-  document.getElementById('product-price').textContent = `$${product.price.toFixed(2)}`;
+  document.getElementById('product-price').textContent = new Intl.NumberFormat('en-NG', { style: 'currency', currency: 'NGN' }).format(product.price).replace('NGN', '₦')
+  ;
   document.getElementById('product-description').textContent = product.description;
   document.getElementById('main-product-image').src = product.image;
   
@@ -249,7 +384,6 @@ function loadRelatedProducts() {
 function createProductCard(product) {
   const card = document.createElement('div');
   card.className = 'product-card';
-  // Format price with Nigerian Naira symbol and comma separators
   const formattedPrice = new Intl.NumberFormat('en-NG', {
     style: 'currency',
     currency: 'NGN'
@@ -266,7 +400,6 @@ function createProductCard(product) {
       <button class="add-to-cart" data-id="${product.id}">Add to Cart</button>
     </div>
   `;
-  // ... rest of the function
 
   
   card.querySelector('.add-to-cart').addEventListener('click', () => {
