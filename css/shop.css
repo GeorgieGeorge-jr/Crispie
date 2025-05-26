@@ -376,6 +376,12 @@ body {
   
     
     /* Adjust other mobile styles as needed */
+    .hero{
+      height: 250px;
+      padding: 15px;
+      background-position: center center;
+    }
+    
     .hero-content h2 {
       font-size: 28px;
     }
