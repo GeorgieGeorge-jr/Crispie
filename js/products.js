@@ -305,11 +305,11 @@ function initCarousels() {
       // Only add button events if not on mobile
       if (window.innerWidth > 768) {
         prevBtn.addEventListener('click', () => {
-          container.scrollBy({ left: -250, behavior: 'smooth' });
+          container.scrollBy({ left: -300, behavior: 'smooth' });
         });
         
         nextBtn.addEventListener('click', () => {
-          container.scrollBy({ left: 250, behavior: 'smooth' });
+          container.scrollBy({ left: 300, behavior: 'smooth' });
         });
       }
       
