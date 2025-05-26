@@ -166,3 +166,7 @@ function updateCheckoutItems(cart, subtotal, delivery, total) {
   document.getElementById('checkout-delivery').textContent = `$${delivery.toFixed(2)}`;
   document.getElementById('checkout-total').textContent = `$${total.toFixed(2)}`;
 }
+
+
+// Logout
+

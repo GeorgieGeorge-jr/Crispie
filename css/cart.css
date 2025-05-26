@@ -1,10 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Playwrite+HU:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap');
 /* Base Styles */
 body {
-    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     color: #333;
     background-color: #f9f9f9;
+    font-family: "Jost", sans-serif;
   }
   
   /* Header Styles */
@@ -23,6 +24,10 @@ body {
   .logo h1 {
     margin: 0;
     color: #4CAF50;
+    font-family: "Playwrite HU", cursive;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
     font-size: 24px;
   }
   
@@ -443,7 +448,8 @@ body {
     .logo {
       margin-bottom: 10px;
       display: flex;
-      align-items: center;
+      flex-direction: column;
+      align-items: start;
       gap: 10px;
     }
     
@@ -461,7 +467,8 @@ body {
     }
     
     nav ul {
-      flex-direction: column;
+      flex-direction: row;
+      justify-content: space-around;
       gap: 8px;
     }
     

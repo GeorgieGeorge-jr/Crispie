@@ -53,7 +53,7 @@ onAuthStateChanged(auth, async (user) => {
   });
 
 // Sign up
- if (signupForm) {
+if (signupForm) {
   signupForm.addEventListener('submit', async (e) => {
     e.preventDefault();
     const email = document.getElementById('signup-email').value;
@@ -115,7 +115,6 @@ if (logoutBtn) {
 }
 
 // Toggle between sign in and sign up forms
-// ... (keep all the Firebase config and imports the same)
 
 // Update the toggleForm function
 window.toggleForm = function () {
