@@ -172,7 +172,7 @@ const products = [
     category: 'yogurt',
     price: 4500,
     description: 'Layers of yogurt, mixed berries and granola',
-    image: 'ng/images/berrybliss.jpg',
+    image: 'ng/images/berrybliss.jpeg',
     nutrition: {
       calories: 280,
       protein: '10g',
