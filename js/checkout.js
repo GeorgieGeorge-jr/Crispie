@@ -1,4 +1,5 @@
 import { updateCartCount } from './products.js';
+import './dark-mode.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   updateCartCount();

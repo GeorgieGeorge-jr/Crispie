@@ -1,4 +1,5 @@
 import { addToCart, updateCartCount } from './products.js';
+import './dark-mode.js';
 
 // Initialize cart on page load
 document.addEventListener('DOMContentLoaded', () => {

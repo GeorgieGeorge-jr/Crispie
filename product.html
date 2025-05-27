@@ -8,13 +8,20 @@
   <link rel="stylesheet" href="css/animations.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<script>
+  const savedTheme = localStorage.getItem('crispie-theme') || 'light';
+  document.documentElement.setAttribute('data-theme', savedTheme);
+</script>
 </head>
 <body>
   <header class="slide-down">
     <div class="logo">
       <h1>Crispie</h1>
-      <p>Healthy Snacks & Drinks</p>
+      <p>Healthy Snacks &amp; Drinks</p>
     </div>
+    <button class="theme-toggle">
+      <i class="fas fa-moon"></i> <!-- Default icon -->
+    </button>
     <nav>
       <ul>
         <li><a href="shop.html">Shop</a></li>

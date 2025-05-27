@@ -1,5 +1,6 @@
 import { initializeApp } from 'https://www.gstatic.com/firebasejs/11.7.1/firebase-app.js';
 import { getFirestore, collection, getDocs } from 'https://www.gstatic.com/firebasejs/11.7.1/firebase-firestore.js';
+import './dark-mode.js';
 
 const firebaseConfig = {
   apiKey: "AIzaSyCikOCOzD55nzpnfU3QD-yB6qWATIyfhns",
