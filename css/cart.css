@@ -425,6 +425,10 @@ body {
       grid-template-columns: 80px 1fr;
       grid-template-rows: auto auto;
     }
+
+    .cart-icon{
+      display: none;
+    }
     
     .cart-item-total {
       grid-column: 2;
