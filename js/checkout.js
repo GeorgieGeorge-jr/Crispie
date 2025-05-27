@@ -71,10 +71,7 @@ function proceedToPayment() {
 }
 
 function completeOrder() {
-  // In a real app, you would process payment here
-  // For demo, we'll just show confirmation
-  
-  document.querySelector('.checkout-steps .step:nth-child(2)').classList.remove('active');
+   document.querySelector('.checkout-steps .step:nth-child(2)').classList.remove('active');
   document.querySelector('.checkout-steps .step:nth-child(3)').classList.add('active');
   
   document.querySelector('.payment-form').style.display = 'none';
