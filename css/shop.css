@@ -82,6 +82,14 @@ body {
     margin-right: 5px;
     font-size: 18px;
   }
+
+  .short-btns{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
   
   /* Hero Section */
   .hero {

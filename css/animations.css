@@ -142,6 +142,7 @@ input, select {
 @media (max-width: 768px) {
   header {
     display: flex;
+    flex-direction: row-reverse;
     flex-wrap: wrap;
     align-items: center;
     padding: 10px 15px;
@@ -171,4 +172,13 @@ input, select {
     order: 4;
     margin-left: 15px;
   }
+}
+
+
+.short-btns{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }

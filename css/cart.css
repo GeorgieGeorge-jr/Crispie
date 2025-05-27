@@ -401,6 +401,15 @@ body {
     font-size: 12px;
     color: #aaa;
   }
+
+  
+  .short-btns{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
   
   /* Responsive */
   @media (max-width: 768px) {
@@ -435,6 +444,15 @@ body {
     nav ul {
       margin-bottom: 15px;
     }
+
+    
+  .short-btns{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+  }
   }
 
   /* Mobile Header Styles */
@@ -519,7 +537,7 @@ body {
     }
     
     .cart-item-total {
-      grid-column: 2;
+      grid-column: 1;
       text-align: left;
       margin-top: 10px;
     }
