@@ -114,6 +114,8 @@ input, select {
   border: 1px solid var(--border-color);
 }
 
+
+
 .cart-summary, .cart-section{
   background: var(--card-bg);
   border: 1px solid var(--border-color);

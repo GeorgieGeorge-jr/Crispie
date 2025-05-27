@@ -167,7 +167,7 @@ body {
   }
   
   .form-group input, .form-group select {
-    width: 100%;
+    width: 90%;
     padding: 12px 15px;
     border: 1px solid #ddd;
     border-radius: 5px;
@@ -402,6 +402,7 @@ body {
     }
     
     .cart-icon {
+      display: none;
       position: absolute;
       top: 15px;
       right: 15px;
@@ -442,4 +443,11 @@ body {
       grid-template-columns: 1fr;
       gap: 0;
     }
+.theme-toggle{
+  opacity: 0;
+}
+  }
+
+  .theme-toggle{
+    opacity: 0;
   }
