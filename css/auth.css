@@ -21,7 +21,7 @@ body {
   max-width: 900px;
   height: auto;
   min-height: 500px;
-  background: #fff;
+  background: var(--card-bg);
   box-shadow: 0 8px 32px rgba(0,0,0,0.1);
   overflow: hidden;
   border-radius: 15px;
@@ -50,34 +50,68 @@ body {
 }
 
 .form-container h2 {
-  color: #2c3e50;
+  color: var(--ink);
   margin-bottom: 20px;
   text-align: center;
   
 }
 
  h2 strong{
-  font-family: "Playwrite HU", cursive;
+  font-family: "Yellowtail", cursive;
+  font-weight: 400;
+  font-size: 1.15em;
+}
+
+.logo-mark-lg {
+  width: 90px;
+  height: 90px;
+  margin: 0 auto 15px;
+  display: block;
+}
+
+.logo-mark-lg .mark-outer-top,
+.logo-mark-lg .mark-inner-top,
+.logo-mark-lg .mark-inner-bottom {
+  stroke-width: 2.5;
+}
+
+.logo-mark-lg .mark-outer-top {
+  stroke: #ffffff;
+}
+
+.logo-mark-lg .mark-inner-top,
+.logo-mark-lg .mark-inner-bottom {
+  stroke: #241C19;
+}
+
+.logo-mark-lg .mark-dot-rose {
+  fill: #ffffff;
+}
+
+.logo-mark-lg .mark-dot-black {
+  fill: #241C19;
 }
 .form-container input {
   padding: 12px 15px;
   width: 100%;
   max-width: 300px;
-  border: 1px solid #ddd;
+  background: var(--input-bg);
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
   border-radius: 25px;
   font-size: 14px;
   transition: all 0.3s;
 }
 
 .form-container input:focus {
-  border-color: #4ca1af;
+  border-color: #B4877A;
   outline: none;
-  box-shadow: 0 0 5px rgba(76, 161, 175, 0.5);
+  box-shadow: 0 0 5px rgba(180, 135, 122, 0.5);
 }
 
 .form-container button {
   padding: 12px 25px;
-  background: linear-gradient(45deg, #4ca1af, #2c3e50);
+  background: linear-gradient(45deg, #B4877A, #241C19);
   color: white;
   border: none;
   border-radius: 25px;
@@ -138,7 +172,7 @@ body {
   left: 50%;
   width: 50%;
   height: 100%;
-  background: linear-gradient(135deg, #4CAF50, #8BC34A);
+  background: linear-gradient(135deg, #B4877A, #D9AFA0);
   display: flex;
   flex-direction: column;
   justify-content: center;

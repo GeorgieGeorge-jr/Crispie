@@ -6,7 +6,7 @@ import {
   signOut,
   onAuthStateChanged
 } from 'https://www.gstatic.com/firebasejs/11.7.1/firebase-auth.js';
-import { setDoc, doc } from 'https://www.gstatic.com/firebasejs/11.7.1/firebase-firestore.js';
+import { getFirestore, setDoc, getDoc, doc } from 'https://www.gstatic.com/firebasejs/11.7.1/firebase-firestore.js';
 
 const firebaseConfig = {
   apiKey: "AIzaSyCikOCOzD55nzpnfU3QD-yB6qWATIyfhns",
@@ -19,6 +19,7 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 const auth = getAuth();
+const db = getFirestore(app);
 
 // Auth UI elements
 const signupForm = document.getElementById('signup-form');

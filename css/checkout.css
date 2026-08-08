@@ -5,13 +5,13 @@ body {
    font-family: "Jost", sans-serif;
     margin: 0;
     padding: 0;
-    color: #333;
+    color: var(--text-color);
     background-color: #f9f9f9;
   }
   
   /* Header Styles (same as shop.css) */
   header {
-    background-color: #fff;
+    background-color: var(--header-bg);
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     padding: 15px 5%;
     display: flex;
@@ -20,22 +20,6 @@ body {
     position: sticky;
     top: 0;
     z-index: 100;
-  }
-  
-  .logo h1 {
-    margin: 0;
-    color: #4CAF50;
-    font-family: "Playwrite HU", cursive;
-    font-optical-sizing: auto;
-    font-weight: 800;
-    font-style: normal;
-    font-size: 24px;
-  }
-  
-  .logo p {
-    margin: 0;
-    font-size: 12px;
-    color: #777;
   }
   
   nav ul {
@@ -51,17 +35,17 @@ body {
   
   nav ul li a {
     text-decoration: none;
-    color: #555;
+    color: var(--text-muted);
     font-weight: 500;
     transition: color 0.3s;
   }
   
   nav ul li a:hover {
-    color: #4CAF50;
+    color: #B4877A;
   }
   
   .cart-icon a {
-    color: #555;
+    color: var(--text-muted);
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -94,7 +78,7 @@ body {
     left: 0;
     right: 0;
     height: 2px;
-    background: #ddd;
+    background: var(--border-color);
     z-index: 1;
   }
   
@@ -110,7 +94,7 @@ body {
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    background: #ddd;
+    background: var(--border-color);
     color: white;
     display: flex;
     align-items: center;
@@ -120,17 +104,17 @@ body {
   }
   
   .step p {
-    color: #777;
+    color: var(--text-muted);
     font-size: 14px;
     margin: 0;
   }
   
   .step.active span {
-    background: #4CAF50;
+    background: #B4877A;
   }
   
   .step.active p {
-    color: #4CAF50;
+    color: #B4877A;
     font-weight: 500;
   }
   
@@ -142,7 +126,7 @@ body {
   }
   
   .shipping-form {
-    background: white;
+    background: var(--card-bg);
     border-radius: 10px;
     padding: 30px;
     box-shadow: 0 3px 15px rgba(0,0,0,0.1);
@@ -150,7 +134,7 @@ body {
   
   .shipping-form h2 {
     margin-top: 0;
-    color: #2c3e50;
+    color: var(--ink);
     font-size: 24px;
     margin-bottom: 25px;
   }
@@ -163,22 +147,22 @@ body {
     display: block;
     margin-bottom: 8px;
     font-weight: 500;
-    color: #555;
+    color: var(--text-muted);
   }
   
   .form-group input, .form-group select {
     width: 90%;
     padding: 12px 15px;
-    border: 1px solid #ddd;
+    border: 1px solid var(--border-color);
     border-radius: 5px;
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
   }
   
   .form-group input:focus, .form-group select:focus {
-    border-color: #4CAF50;
+    border-color: #B4877A;
     outline: none;
-    box-shadow: 0 0 5px rgba(76, 161, 175, 0.3);
+    box-shadow: 0 0 5px rgba(180, 135, 122, 0.3);
   }
   
   .form-row {
@@ -198,7 +182,7 @@ body {
   }
   
   .continue-btn {
-    background: linear-gradient(45deg, #4CAF50, #8BC34A);
+    background: linear-gradient(45deg, #B4877A, #D9AFA0);
     color: white;
     border: none;
     padding: 12px 25px;
@@ -212,14 +196,14 @@ body {
   }
   
   .continue-btn:hover {
-    background: linear-gradient(45deg, #3e8e41, #7cb342);
+    background: linear-gradient(45deg, #96655A, #A97A6C);
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
   }
   
   /* Order Summary */
   .order-summary {
-    background: white;
+    background: var(--card-bg);
     border-radius: 10px;
     padding: 30px;
     box-shadow: 0 3px 15px rgba(0,0,0,0.1);
@@ -230,10 +214,10 @@ body {
   
   .order-summary h2 {
     margin-top: 0;
-    color: #2c3e50;
+    color: var(--ink);
     font-size: 20px;
     padding-bottom: 15px;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid var(--border-color);
   }
   
   .summary-items {
@@ -245,7 +229,7 @@ body {
     justify-content: space-between;
     margin-bottom: 15px;
     padding-bottom: 15px;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid var(--border-color);
   }
   
   .checkout-item:last-child {
@@ -261,19 +245,19 @@ body {
   
   .checkout-item-info p {
     margin: 0;
-    color: #777;
+    color: var(--text-muted);
     font-size: 13px;
   }
   
   .checkout-item-price {
     font-weight: 600;
-    color: #4CAF50;
+    color: #B4877A;
   }
   
   .summary-totals {
     margin-top: 20px;
     padding-top: 20px;
-    border-top: 1px solid #eee;
+    border-top: 1px solid var(--border-color);
   }
   
   .summary-row {
@@ -289,7 +273,7 @@ body {
   
   /* Footer (same as shop.css) */
   footer {
-    background: #2c3e50;
+    background: #241C19;
     color: white;
     padding: 40px 5% 20px;
   }
@@ -302,7 +286,7 @@ body {
   }
   
   .footer-section h3 {
-    color: #8BC34A;
+    color: #D9AFA0;
     margin-bottom: 15px;
     font-size: 18px;
   }
@@ -321,7 +305,7 @@ body {
   }
   
   .footer-section a:hover {
-    color: #8BC34A;
+    color: #D9AFA0;
   }
   
   .footer-bottom {

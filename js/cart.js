@@ -1,4 +1,4 @@
-import { addToCart, updateCartCount } from './products.js';
+import { addToCart, updateCartCount, formatPrice } from './products.js';
 import './dark-mode.js';
 
 // Initialize cart on page load
@@ -37,7 +37,7 @@ function loadCartItems() {
       </div>
       <div class="cart-item-details">
         <h3>${item.name}</h3>
-        <p class="cart-item-price">N${item.price.toFixed(2)}</p>
+        <p class="cart-item-price">${formatPrice(item.price)}</p>
         <div class="cart-item-controls">
           <div class="quantity-control">
             <button class="quantity-btn minus"><i class="fas fa-minus"></i></button>
@@ -48,7 +48,7 @@ function loadCartItems() {
         </div>
       </div>
       <div class="cart-item-total">
-        <p class="cart-item-total-price">N${(item.price * item.quantity).toFixed(2)}</p>
+        <p class="cart-item-total-price">${formatPrice(item.price * item.quantity)}</p>
       </div>
     `;
     
@@ -114,7 +114,7 @@ function updateCartItem(item, cartItemElement) {
     
     // Update total price display
     const totalPriceElement = cartItemElement.querySelector('.cart-item-total-price');
-    totalPriceElement.textContent = `$${(item.price * item.quantity).toFixed(2)}`;
+    totalPriceElement.textContent = formatPrice(item.price * item.quantity);
     
     updateOrderSummary(cart);
     updateCartCount();
@@ -134,9 +134,9 @@ function updateOrderSummary(cart) {
   const delivery = subtotal > 0 ? 1500 : 0;
   const total = subtotal + delivery;
   
-  document.getElementById('subtotal').textContent = `N${subtotal.toFixed(2)}`;
-  document.getElementById('delivery').textContent = `N${delivery.toFixed(2)}`;
-  document.getElementById('total').textContent = `N${total.toFixed(2)}`;
+  document.getElementById('subtotal').textContent = formatPrice(subtotal);
+  document.getElementById('delivery').textContent = formatPrice(delivery);
+  document.getElementById('total').textContent = formatPrice(total);
   
   // Also update checkout page if exists
   if (document.getElementById('checkout-items')) {
@@ -154,18 +154,18 @@ function updateCheckoutItems(cart, subtotal, delivery, total) {
     itemElement.innerHTML = `
       <div class="checkout-item-info">
         <h4>${item.name} × ${item.quantity}</h4>
-        <p>$${item.price.toFixed(2)} each</p>
+        <p>${formatPrice(item.price)} each</p>
       </div>
       <div class="checkout-item-price">
-        N${(item.price * item.quantity).toFixed(2)}
+        ${formatPrice(item.price * item.quantity)}
       </div>
     `;
     checkoutItems.appendChild(itemElement);
   });
   
-  document.getElementById('checkout-subtotal').textContent = `$${subtotal.toFixed(2)}`;
-  document.getElementById('checkout-delivery').textContent = `$${delivery.toFixed(2)}`;
-  document.getElementById('checkout-total').textContent = `$${total.toFixed(2)}`;
+  document.getElementById('checkout-subtotal').textContent = formatPrice(subtotal);
+  document.getElementById('checkout-delivery').textContent = formatPrice(delivery);
+  document.getElementById('checkout-total').textContent = formatPrice(total);
 }
 
 
